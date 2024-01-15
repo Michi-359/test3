@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+ <meta charset="utf-8">
+ <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="main.css">
+ <title>電卓</title>
+</head>
+<body>
+ <div id="outDiv">
+  <table border="0" class="calTbc" cellpadding="0">
+   <tr>
+    <th colspan="3">
+    <input type="text" value="0" id="dispBox"></th>
+    <th><input type="button" value="AC" onclick="clr()" id="aC"></th>
+   </tr>
+   <tr>
+    <td><input type="button" value="７" onclick="push(7)"></td>
+    <td><input type="button" value="８" onClick="push(8)"></td>
+    <td><input type="button" value="９" onClick="push(9)"></td>
+    <td><input type="button" value="÷" onClick="opePush('/')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="４" onClick="push(4)"></td>
+    <td><input type="button" value="５" onClick="push(5)"></td>
+    <td><input type="button" value="６" onClick="push(6)"></td>
+    <td><input type="button" value="×" onClick="opePush('*')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="１" onClick="push(1)"></td>
+    <td><input type="button" value="２" onClick="push(2)"></td>
+    <td><input type="button" value="３" onClick="push(3)"></td>
+    <td><input type="button" value="－" onClick="opePush('-')"></td>
+   </tr>
+   <tr>
+    <td><input type="button" value="０" onClick="push(0)"></td>
+    <td><input type="button" value=" ．" onclick="push('.')"></td>
+    <td><input type="button" value="＝" onClick="equal()"></td>
+    <td><input type="button" value="＋" onClick="opePush('+')"></td>
+   </tr>
+   <tr>
+    <td colspan="3">
+   </tr>
+  </table>
+ </div>
+<script src="main.js"></script>
+</body>
+</html>
